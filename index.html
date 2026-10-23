@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Licenças Creative Commons: guia interativo</title>
+<style>
+:root{--bg:#f2f6f9;--fg:#14202e;--mut:#4d5b6b;--card:#fff;--line:#cfd9e2;--ac:#0a5c8f;--hl:#fff1b8;--c1:#0a6b5a;--c2:#1f5fbf;--c3:#b3541e;--c4:#7a3fa8;--ok:#0a6b3a;--bad:#a8322a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1620;--fg:#e6edf3;--mut:#9fb0c0;--card:#17212d;--line:#2d3b4a;--ac:#6cb8ee;--hl:#4a3f12;--c1:#4fd1b5;--c2:#7fb0ff;--c3:#ff9d62;--c4:#c999f0;--ok:#5fd68f;--bad:#ff8b80;color-scheme:dark}}
+html{scroll-padding-top:calc(60px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .5em}h1{font-size:clamp(1.8rem,5vw,3rem)}h2{font-size:1.6rem}h3{font-size:1.1rem}
+p{max-width:72ch;margin:.4em 0 1em}.w{max-width:1100px;margin:auto;padding:0 16px}section{padding:36px 0;border-top:1px solid var(--line)}
+a{color:var(--ac)}button,select,input,summary{font:inherit;color:inherit}
+button,select,.tg,summary,.nv a,input[type=text],input[type=date]{min-height:44px}
+button,select,input[type=text],input[type=date]{background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:6px 12px}
+button{cursor:pointer}button:hover:not(:disabled){border-color:var(--ac)}button.on{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.tx{overflow-wrap:anywhere}.tx span{padding:0 2px;border-radius:3px}.tx span.on{background:var(--hl);outline:2px solid var(--ac)}.tk{text-align:left;display:block;height:100%}.tk.on{background:var(--hl);color:var(--fg);border-color:var(--ac)}
+.top{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.top .w{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}.top b{font-family:Georgia,serif}
+.nv{display:none;width:100%;flex-direction:column}.nv.open{display:flex}.nv a{display:flex;align-items:center;text-decoration:none;padding:0 8px}
+@media(min-width:641px){#mb{display:none}.nv{display:flex;flex-direction:row;width:auto;overflow-x:auto}}
+.hero{padding:40px 0 28px}.hero p{font-size:1.1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.ic{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;font:700 .72rem system-ui;color:#fff;font-style:normal;margin-right:4px}
+.i-by{background:var(--c1)}.i-nc{background:var(--c2)}.i-nd{background:var(--c3)}.i-sa{background:var(--c4)}.i-0{background:#555}
+.sp{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:12px 0}@media(min-width:900px){.sp{grid-template-columns:repeat(8,1fr)}}
+.sp button{border-width:2px;font-size:.85rem;padding:4px}.bar{height:12px;border-radius:6px;background:linear-gradient(90deg,#8a2b2b,#d9a43a,#2e9c6a)}
+.cols{display:grid;gap:12px;grid-template-columns:1fr}@media(min-width:641px){.cols{grid-template-columns:repeat(2,1fr)}}@media(min-width:1025px){.cols{grid-template-columns:repeat(4,1fr)}}
+.cols.g3{grid-template-columns:1fr}@media(min-width:641px){.cols.g3{grid-template-columns:repeat(2,1fr)}}@media(min-width:1025px){.cols.g3{grid-template-columns:repeat(3,1fr)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+table{border-collapse:collapse;width:100%;background:var(--card)}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+th[data-c="1"]{border-top:4px solid var(--c1)}th[data-c="2"]{border-top:4px solid var(--c2)}th[data-c="3"]{border-top:4px solid var(--c3)}th[data-c="4"]{border-top:4px solid var(--c4)}
+table[data-h="1"] [data-c="1"],table[data-h="2"] [data-c="2"],table[data-h="3"] [data-c="3"],table[data-h="4"] [data-c="4"]{background:var(--hl);font-weight:600}
+@media(max-width:640px){table,tbody,tr,td{display:block}thead{display:none}tr{border:1px solid var(--line);border-radius:10px;margin-bottom:12px;overflow:hidden}td{border:0;border-bottom:1px solid var(--line)}td::before{content:attr(data-l)": ";font-weight:600}}
+.two{display:grid;gap:16px;grid-template-columns:1fr}@media(min-width:641px){.two{grid-template-columns:2fr 3fr}}@media(min-width:1025px){.two{grid-template-columns:1fr 1fr}}
+.tg{display:flex;align-items:center;gap:10px;padding:4px 0}.tg input{width:26px;height:26px}
+.warn{background:var(--hl);border-left:5px solid var(--c3);padding:10px 14px;border-radius:6px;margin-top:10px}.warn ul{margin:.3em 0;padding-left:1.2em}
+.code{font:700 1.7rem Georgia,serif;margin:6px 0}.note{color:var(--bad);min-height:1.5em}
+.out{border:1px dashed var(--line);border-radius:8px;padding:10px;margin:6px 0 12px;overflow-wrap:anywhere}
+label.f{display:block;margin:8px 0 2px;font-weight:600}input[type=text],input[type=date],select{width:100%}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}.opt.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 18%,var(--card))}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin:8px 0;padding:0 14px}summary{display:flex;align-items:center;cursor:pointer;font-weight:600}
+footer{background:var(--card);border-top:1px solid var(--line);padding:28px 0;font-size:.92rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header class="top"><div class="w"><b>Licenças Creative Commons</b><button id="mb" aria-expanded="false" aria-controls="nv">Menu</button>
+<nav class="nv" id="nv" aria-label="Seções"><a href="#conceito">Conceito</a><a href="#espectro">Espectro</a><a href="#elementos">Elementos</a><a href="#matriz">Matriz</a><a href="#exemplos">Exemplos</a><a href="#sim1">Monte a licença</a><a href="#construtor">Construtor</a><a href="#quiz">Quiz</a><a href="#erros">Erros</a></nav></div></header>
+<main class="w">
+<div class="hero"><h1>Licenças Creative Commons: como criar, usar e atribuir</h1><p style="margin:0 0 .8em;font-weight:600;color:var(--mut)">Andréa Soares Rocha da Silva</p><p>Do “todos os direitos reservados” ao domínio público, as licenças CC permitem autorizar usos da sua obra com antecedência. Explore o espectro, monte a sua licença e gere a citação na ABNT.</p></div>
+
+<section id="conceito"><h2>Conceito</h2><div class="cols g3"><div class="card"><h3>O que são</h3><p>Instrumentos jurídicos padronizados que permitem ao autor autorizar, com antecedência, usos da sua obra por terceiros, sem negociação individual. São um meio-termo entre “todos os direitos reservados” e o domínio público, preservando sempre o reconhecimento da autoria.</p></div><div class="card"><h3>Autoria</h3><p>Criadas pela Creative Commons, organização sem fins lucrativos fundada em 2001 nos Estados Unidos por Lawrence Lessig, Hal Abelson e Eric Eldred. As primeiras licenças foram publicadas em 2002. Confira os dados históricos na página oficial.</p></div><div class="card"><h3>Propósito</h3><p>Ampliar o conjunto de obras disponíveis para compartilhamento legal e reutilização, retirando a barreira do pedido de permissão a cada uso, sem que o autor abra mão do crédito.</p></div></div>
+<h3 style="margin-top:28px">Atribuição TASL</h3><p><b>O que é:</b> método para atribuir corretamente uma obra sob licença CC, reunindo quatro informações: <b>T</b>itle (título), <b>A</b>uthor (autor), <b>S</b>ource (fonte) e <b>L</b>icense (licença). A atribuição é obrigatória nas seis licenças; o CC0 não a exige, mas citar a fonte é boa prática.</p><p><b>Como usar:</b> coloque o crédito perto do conteúdo reutilizado (legenda, rodapé do slide, créditos finais). Se você alterou, traduziu ou recortou a obra, indique que é adaptação com “Adaptado de…” e credite a original.</p>
+<div class="cols"><div class="card"><b><i class="ic i-by">T</i>Título</b><br>Nome exato da obra; se não houver, pode ser omitido.</div><div class="card"><b><i class="ic i-nc">A</i>Autor</b><br>Criador, titular dos direitos ou pseudônimo indicado.</div><div class="card"><b><i class="ic i-nd">S</i>Fonte</b><br>Link para a obra original, de preferência o URL completo.</div><div class="card"><b><i class="ic i-sa">L</i>Licença</b><br>Licença exata e versão, com link para o texto-resumo.</div></div>
+<div class="card" style="margin-top:12px"><p class="tx"><b>Obra adaptada:</b> “Infográfico sobre IA na educação”, por Ana Costa. Adaptado de “Mapa da desinformação digital”, por Bruno Alves. Disponível em: https://exemplo.org/original. Licença CC BY-SA 4.0.</p></div></section>
+
+<section id="espectro"><h2>Espectro dos direitos</h2><p>Escolha um ponto do espectro, do mais restritivo ao mais aberto.</p><div class="bar"></div><div class="sp" id="sp"></div><div class="card" id="spd" aria-live="polite"></div></section>
+
+<section id="elementos"><h2>Elementos das licenças</h2><p>Toda licença CC exige atribuição (BY). As demais condições são opcionais e combináveis.</p><div class="cols" id="el"></div></section>
+
+<section id="matriz"><h2>Matriz das seis licenças</h2><p>Destaque uma coluna para comparar a permissão.</p><div class="chips" id="mc"></div><table id="mt" data-h="0"><thead><tr><th>Licença</th><th data-c="1"><i class="ic i-by">BY</i>Atribuição</th><th data-c="2"><i class="ic i-nc">NC</i>Uso comercial</th><th data-c="3"><i class="ic i-nd">ND</i>Adaptações</th><th data-c="4"><i class="ic i-sa">SA</i>Mesma licença nas derivadas</th></tr></thead><tbody></tbody></table></section>
+
+<section id="exemplos"><h2>Exemplos de aplicação</h2><p>Filtre as licenças pelo que você precisa permitir.</p><div class="chips" id="fc"></div><div class="cols g3" id="eg"></div></section>
+
+<section id="sim1"><h2>Simulador 1 — Monte a sua licença</h2><div class="two"><div class="card"><h3>Condições</h3>
+<label class="tg"><input type="checkbox" checked disabled> <span><b>BY</b> — Atribuição (sempre presente)</span></label>
+<label class="tg"><input type="checkbox" id="nc"> <span><b>NC</b> — proibir uso comercial</span></label>
+<label class="tg"><input type="checkbox" id="nd"> <span><b>ND</b> — proibir adaptações</span></label>
+<label class="tg"><input type="checkbox" id="sa"> <span><b>SA</b> — exigir mesma licença nas derivadas</span></label>
+<div class="note" id="s1n" aria-live="polite"></div>
+<div class="chips"><button id="a1">Quero abrir tudo (CC BY)</button><button id="a2">Quero só compartilhar sem alterações (CC BY-ND)</button></div></div>
+<div class="card" id="s1o" aria-live="polite"></div></div></section>
+
+<section id="construtor"><h2>Construtor interativo de citação</h2><div class="two"><div class="card"><div class="chips" id="ex"></div>
+<label class="f" for="au">Autor (Nome Sobrenome)</label><input type="text" id="au"><label class="f" for="ti">Título</label><input type="text" id="ti">
+<label class="f" for="an">Ano</label><input type="text" id="an" inputmode="numeric"><label class="f" for="su">Suporte / editora</label><input type="text" id="su">
+<label class="f" for="ur">URL</label><input type="text" id="ur"><label class="f" for="ac">Data de acesso</label><input type="date" id="ac"></div>
+<div class="card"><h3>Referência ABNT (NBR 6023)</h3><div class="out" id="o1"></div><button data-t="o1">Copiar</button>
+<h3 style="margin-top:14px">Citação no texto (NBR 10520:2023)</h3><div class="out" id="o2"></div><button data-t="o2">Copiar</button>
+<h3 style="margin-top:14px">Atribuição TASL</h3><div class="out" id="o3"></div><button data-t="o3">Copiar</button></div></div>
+<h3 style="margin-top:24px">Onde exibir esta citação</h3><table id="wt"><thead><tr><th>Formato</th><th>Onde inserir</th></tr></thead><tbody></tbody></table></section>
+
+<section id="quiz"><h2>Quiz final</h2><div class="card" id="qz" aria-live="polite"></div></section>
+
+<section id="erros"><h2>Erros comuns</h2><div id="er"></div></section>
+</main>
+<footer><div class="w"><p><b>Fontes:</b> <a href="https://creativecommons.org/cc-licenses/">Creative Commons — Licenças</a>; <a href="https://creativecommons.org/chooser/">License Chooser</a>; <a href="https://br.creativecommons.net/licencas/">Creative Commons Brasil</a>; materiais de apoio anexados pela autora.</p>
+<p><b>Autoria:</b> Andréa Soares Rocha da Silva. Contribuições da autora: concepção do recurso, definição da arquitetura e dos requisitos, especificação dos simuladores, do construtor de citação e do quiz, seleção das fontes e dos materiais de apoio, e supervisão e responsabilidade pelo conteúdo final.</p>
+<p><b>Ferramenta de inteligência artificial:</b> Claude (Anthropic), modelo Claude Sonnet 5.5. Contribuições da ferramenta: programação do recurso em HTML, CSS e JavaScript; redação dos textos de apoio, dos exemplos e das questões do quiz, a partir das fontes e das especificações fornecidas pela autora.</p>
+<p>Todos os direitos são da autora.</p>
+<p><b>Como citar este recurso:</b><br>SILVA, Andréa Soares Rocha da. <b>Licenças Creative Commons: guia interativo para criação, uso e atribuição</b>. Fortaleza, 2026. Infográfico interativo. Todos os direitos reservados.</p></div></footer>
+<script>
+const $=s=>document.querySelector(s),H=(e,h)=>{e.innerHTML=h};
+$("#mb").onclick=()=>{const o=$("#nv").classList.toggle("open");$("#mb").setAttribute("aria-expanded",o)};
+document.querySelectorAll(".nv a").forEach(a=>a.addEventListener("click",()=>{$("#nv").classList.remove("open");$("#mb").setAttribute("aria-expanded",false)}));
+const ic=c=>c.split("-").map(x=>`<i class="ic i-${x.toLowerCase()}">${x}</i>`).join("");
+const code=(nc,nd,sa)=>"BY"+(nc?"-NC":"")+(nd?"-ND":"")+(sa?"-SA":"");
+const L=[[0,0,0],[0,0,1],[1,0,0],[1,0,1],[0,1,0],[1,1,0]].map(([nc,nd,sa])=>({nc,nd,sa,k:code(nc,nd,sa)}));
+const EX={"BY":"Slides de aula em repositório institucional: outra universidade pode adaptá-los, até em curso pago, citando a autoria.","BY-SA":"Apostila de módulo: a versão atualizada por colegas precisa ser publicada também sob CC BY-SA 4.0.","BY-NC":"Fotografia de campanha de saúde: ilustra cartilha educativa gratuita, mas não anúncio de curso pago.","BY-NC-SA":"Infográfico traduzido para a disciplina: a nova versão mantém CC BY-NC-SA 4.0 e credita a fonte.","BY-ND":"Vídeo institucional da faculdade: pode ser compartilhado na íntegra, inclusive por empresas, sem cortes.","BY-NC-ND":"Relatório de pesquisa sensível: só pode ser baixado e repassado intacto, sem fins comerciais."};
+const sent=l=>`Você pode copiar e redistribuir o material em qualquer meio ou formato${l.nd?"":", além de remixar, transformar e criar a partir dele"}, ${l.nc?"para fins não comerciais":"para qualquer fim, inclusive comercial"}, desde que dê o crédito apropriado${l.sa?" e distribua suas contribuições sob a mesma licença":""}${l.nd?"; se remixar ou transformar, você não pode distribuir o material modificado":""}.`;
+const lic=c=>c=="CC0"?{n:"CC0 1.0",u:"https://creativecommons.org/publicdomain/zero/1.0/"}:{n:"CC "+c+" 4.0",u:"https://creativecommons.org/licenses/"+c.toLowerCase()+"/4.0/"};
+document.querySelectorAll(".tk").forEach(b=>b.onclick=()=>{const on=!b.classList.contains("on");document.querySelectorAll(".tk").forEach(x=>x.classList.remove("on"));if(on)b.classList.add("on");document.querySelectorAll(".tx span").forEach(s=>s.classList.toggle("on",on&&s.dataset.p==b.dataset.p))});
+// espectro
+const SP=[["©","Todos os direitos reservados","Qualquer uso depende de autorização individual do titular."],["BY-NC-ND","Mais restritiva das CC","Só baixar e compartilhar intacto, com crédito, sem fins comerciais."],["BY-NC-SA","Não comercial, com reciprocidade","Adaptações são permitidas sem fins comerciais, mantendo a mesma licença."],["BY-NC","Não comercial","Adaptar é permitido, mas sem uso comercial."],["BY-ND","Sem derivações","Uso comercial permitido, porém só a obra original, sem alterações."],["BY-SA","Aberta com reciprocidade","Uso comercial e adaptações, desde que as derivadas usem a mesma licença."],["BY","Mais aberta das licenças","Qualquer uso, inclusive comercial, com crédito ao autor."],["CC0","Dedicação ao domínio público","Não é licença: o autor renuncia aos direitos na extensão permitida em lei."]];
+H($("#sp"),SP.map((s,i)=>`<button data-i="${i}">${s[0]}</button>`).join(""));
+const sp=i=>{document.querySelectorAll("#sp button").forEach((b,j)=>b.classList.toggle("on",i==j));H($("#spd"),`<h3>${SP[i][0]=="©"?"":ic(SP[i][0]=="CC0"?"0":SP[i][0])}${SP[i][1]}</h3><p>${SP[i][2]}</p>`)};
+$("#sp").onclick=e=>{if(e.target.dataset.i)sp(+e.target.dataset.i)};sp(0);
+// elementos
+const EL=[["BY","Atribuição","Obrigatória em todas: indicar autoria, fonte e licença."],["NC","NãoComercial","Proíbe uso voltado principalmente a vantagem comercial."],["ND","SemDerivações","Compartilhar apenas a forma original, sem adaptações."],["SA","CompartilhaIgual","Obras derivadas devem usar os mesmos termos da original."]];
+H($("#el"),EL.map(e=>`<div class="card"><h3>${ic(e[0])}${e[1]}</h3><p>${e[2]}</p></div>`).join(""));
+// matriz
+const cols=["Todas","Atribuição","Uso comercial","Adaptações","Mesma licença"],cc=["","BY","NC","ND","SA"];
+H($("#mc"),cols.map((c,i)=>`<button data-h="${i}" class="${i?"":"on"}">${i?ic(cc[i]):""}${c}</button>`).join(""));
+H($("#mt tbody"),L.map(l=>`<tr><td data-l="Licença"><b>CC ${l.k}</b></td><td data-c="1" data-l="Atribuição">Obrigatória</td><td data-c="2" data-l="Uso comercial">${l.nc?"Não":"Sim"}</td><td data-c="3" data-l="Adaptações">${l.nd?"Não":l.sa?"Sim, com a mesma licença":"Sim"}</td><td data-c="4" data-l="Mesma licença">${l.sa?"Obrigatória":"—"}</td></tr>`).join(""));
+const hl=i=>{$("#mt").dataset.h=i;document.querySelectorAll("#mc button").forEach(b=>b.classList.toggle("on",b.dataset.h==i))};
+$("#mc").onclick=e=>{if(e.target.dataset.h)hl(e.target.dataset.h)};document.querySelectorAll("#mt th[data-c]").forEach(t=>t.onclick=()=>hl(t.dataset.c));
+// exemplos filtráveis
+const F=[["Todas",l=>1],["Uso comercial permitido",l=>!l.nc],["Sem uso comercial",l=>l.nc],["Adaptação permitida",l=>!l.nd],["Sem derivações",l=>l.nd],["Exige mesma licença",l=>l.sa]];
+H($("#fc"),F.map((f,i)=>`<button data-f="${i}" class="${i?"":"on"}">${f[0]}</button>`).join(""));
+const fl=i=>{document.querySelectorAll("#fc button").forEach(b=>b.classList.toggle("on",b.dataset.f==i));H($("#eg"),L.filter(F[i][1]).map(l=>`<div class="card"><h3>${ic(l.k)}</h3><b>CC ${l.k}</b><p>${EX[l.k]}</p></div>`).join(""))};
+$("#fc").onclick=e=>{if(e.target.dataset.f)fl(+e.target.dataset.f)};fl(0);
+// sim 1
+const base=["Cópias já distribuídas sob a licença não podem ser revogadas.","Não há registro nem aviso à Creative Commons: basta marcar a obra com nome, versão e link.","Confira direitos de terceiros (imagens, músicas, fontes). Em obra feita por vínculo institucional, veja a política da instituição."];
+function s1(){const nc=$("#nc").checked,nd=$("#nd").checked,sa=$("#sa").checked,k=code(nc,nd,sa),l={nc,nd,sa};
+$("#sa").disabled=nd;$("#nd").disabled=sa;if(nd)$("#sa").checked=false;if(sa)$("#nd").checked=false;
+$("#s1n").textContent=nd?"SA desabilitado: não existe CC BY-ND-SA. ND proíbe adaptações, e SA só faz sentido para obras derivadas.":sa?"ND desabilitado: não existe CC BY-ND-SA, pois SA regula obras derivadas e ND as proíbe.":"";
+const ex=[...base];if(nc)ex.push("“Não comercial” depende do uso principal; em caso de dúvida, consulte o titular.");if(nd)ex.push("Quem quiser traduzir, recortar ou adaptar precisará da sua permissão.");if(sa)ex.push("Derivadas herdarão a mesma licença: verifique compatibilidade antes de combinar materiais.");if(k=="BY")ex.push("É a opção mais aberta entre as licenças, boa para material didático amplamente reutilizado.");
+H($("#s1o"),`<div>${ic(k)}</div><div class="code">${lic(k).n}</div><p>${sent(l)}</p><p><b>Na universidade:</b> ${EX[k]}</p><div class="warn"><b>Atenção</b><ul>${ex.map(x=>`<li>${x}</li>`).join("")}</ul></div>`)}
+["nc","nd","sa"].forEach(i=>$("#"+i).onchange=s1);
+const set=(a,b,c)=>{$("#nc").checked=a;$("#nd").checked=b;$("#sa").checked=c;s1()};$("#a1").onclick=()=>set(0,0,0);$("#a2").onclick=()=>set(0,1,0);s1();
+// citação
+const M=["jan.","fev.","mar.","abr.","maio","jun.","jul.","ago.","set.","out.","nov.","dez."];
+const fd=v=>{if(!v)return"[data]";const[y,m,d]=v.split("-");return`${+d} ${M[m-1]} ${y}`};
+function parts(d){const a=(d.au||"").trim();let s="",g="";if(a.includes(",")){[s,g]=a.split(",").map(x=>x.trim())}else{const p=a.split(/\s+/);s=p.pop()||"";g=p.join(" ")}return{S:s.toUpperCase(),s:s?s[0].toUpperCase()+s.slice(1).toLowerCase():"[Autor]",g}}
+function cite(d){const p=parts(d),t=d.ti||"[Título]",y=d.an||"[ano]";
+return{r:`${p.S||"[AUTOR]"}${p.g?", "+p.g:""}. <b>${t}</b>${d.ds?" ["+d.ds+"]":""}. [S. l.]: ${d.su||"[editora]"}, ${y}. Disponível em: ${d.ur||"[URL]"}. Acesso em: ${fd(d.ac)}.`,
+c:`(${p.s}, ${y}) ou ${p.s} (${y})`,
+t:`“${t}”, por ${d.au||"[Autor]"}. Disponível em: ${d.ur||"[URL]"}.`}}
+const T={site:["Site ou blog","Maria Silva","Aula sobre letramento informacional","Blog Educação Aberta","https://exemplo.org/aula","Página da web","No rodapé, ao lado da obra ou no código HTML gerado pelo License Chooser."],
+art:["Artigo ou livro","Maria Silva","Letramento informacional na saúde","Editora Universitária","https://exemplo.org/livro","","Na folha de rosto, página de créditos ou nota de copyright; em figuras, na legenda."],
+sl:["Apresentação (slides)","Maria Silva","IA na educação","Repositório Institucional","https://exemplo.org/slides","Apresentação de slides","No último slide, no rodapé de cada slide ou na página de créditos."],
+vid:["Vídeo ou podcast","Maria Silva","Tutorial de referências ABNT","Canal Educação Digital","https://exemplo.org/video","Vídeo","Nos créditos finais, na descrição e, idealmente, em tela; no podcast, menção oral e créditos completos na página."],
+img:["Imagem isolada","Maria Silva","Fotografia de biblioteca universitária","Acervo Aberto","https://exemplo.org/foto","Fotografia","Imediatamente abaixo da imagem, na legenda ou na página de metadados."]};
+const smp=k=>({au:T[k][1],ti:T[k][2],an:"2026",su:T[k][3],ur:T[k][4],ds:T[k][5],ac:"2026-10-23"});
+const fill=k=>{const d=smp(k);["au","ti","an","su","ur","ac"].forEach(i=>$("#"+i).value=d[i]);ct.ds=d.ds;b3()};
+let ct={ds:""};
+function b3(){const d={ds:ct.ds};["au","ti","an","su","ur","ac"].forEach(i=>d[i]=$("#"+i).value);const c=cite(d);H($("#o1"),c.r);H($("#o2"),c.c);H($("#o3"),c.t)}
+H($("#ex"),Object.keys(T).map(k=>`<button data-k="${k}">${T[k][0]}</button>`).join(""));
+$("#ex").onclick=e=>{if(e.target.dataset.k)fill(e.target.dataset.k)};
+["au","ti","an","su","ur","ac"].forEach(i=>$("#"+i).oninput=()=>{ct.ds="";b3()});fill("site");
+document.querySelectorAll("[data-t]").forEach(b=>b.onclick=async()=>{const t=$("#"+b.dataset.t).innerText;try{await navigator.clipboard.writeText(t);b.textContent="Copiado!"}catch(e){b.textContent="Selecione e copie"}setTimeout(()=>b.textContent="Copiar",1800)});
+H($("#wt tbody"),Object.keys(T).map(k=>`<tr><td data-l="Formato"><b>${T[k][0]}</b></td><td data-l="Onde inserir">${T[k][6]}</td></tr>`).join(""));
+// quiz
+const Q=[["Um professor quer que outras instituições adaptem seus slides, inclusive em cursos pagos, só com crédito. Qual licença?",[["CC BY-NC","NC proíbe o uso comercial, e o curso pago seria comercial."],["CC BY","Correto: BY permite adaptação e uso comercial com atribuição."],["CC BY-ND","ND impede a adaptação que ele quer permitir."]],1],
+["Um vídeo institucional está sob CC BY-ND. O que NÃO é permitido?",[["Compartilhar o vídeo inteiro","Isso é permitido, com crédito."],["Citar a autoria ao compartilhar","O crédito é obrigatório, não proibido."],["Recortar o vídeo para criar uma versão resumida","Correto: ND proíbe adaptações, inclusive cortes."]],2],
+["Você adaptou uma apostila licenciada em CC BY-SA. Como publicar sua versão?",[["Sob CC BY-SA, creditando a original","Correto: SA exige a mesma licença nas derivadas."],["Sob CC BY-NC-ND","Mudar os termos viola a condição SA."],["Com todos os direitos reservados","SA não permite fechar a obra derivada."]],0],
+["O que é o CC0?",[["A licença mais restritiva","Essa é a CC BY-NC-ND."],["Uma dedicação ao domínio público, sem condições","Correto: o autor renuncia aos direitos na extensão permitida em lei."],["Licença que exige atribuição","O CC0 não exige crédito, embora citar seja boa prática."]],1],
+["Uma foto CC BY-NC pode ser usada em anúncio de um curso pago?",[["Sim, se creditar o autor","O crédito não elimina a restrição NC."],["Sim, se editar a imagem","Alterar não afasta a restrição comercial."],["Não, o uso é comercial","Correto: NC proíbe uso voltado a vantagem comercial."]],2],
+["O crédito “Foto: João, Creative Commons” está completo?",[["Sim, há autor e licença","Falta a licença específica."],["Não: faltam título, fonte e licença exata com versão e link","Correto: TASL exige título, autor, fonte e licença."],["Falta só o ano","O ano ajuda, mas o problema principal é a licença genérica."]],1],
+["Existe a licença CC BY-ND-SA?",[["Sim, em todas as versões","Não existe em nenhuma versão."],["Sim, só na versão 3.0","Também não existe na 3.0."],["Não: ND proíbe derivadas e SA regula derivadas","Correto: as condições são incompatíveis."]],2],
+["Para licenciar minha obra com CC, preciso registrá-la na Creative Commons?",[["Não, basta marcar a obra de forma visível","Correto: nome, versão e link da licença."],["Sim, mediante taxa","Não há registro nem pagamento."],["Só se for uso comercial","O registro não é exigido em nenhum caso."]],0]];
+let qi=0,ans=[];
+function rq(){const q=Q[qi];H($("#qz"),`<p><b>Questão ${qi+1} de ${Q.length}</b></p><h3>${q[0]}</h3>${q[1].map((o,i)=>`<button class="opt" data-i="${i}">${o[0]}</button>`).join("")}<div id="fb"></div>`)}
+function end(){const n=ans.filter((a,i)=>a==Q[i][2]).length;H($("#qz"),`<h3>Placar: ${n} de ${Q.length}</h3>${ans.map((a,i)=>a==Q[i][2]?"":`<div class="warn"><b>${Q[i][0]}</b><br>Sua resposta: ${Q[i][1][a][0]}<br>Correta: ${Q[i][1][Q[i][2]][0]}. ${Q[i][1][Q[i][2]][1]}</div>`).join("")||"<p>Sem erros para revisar.</p>"}<button id="rs">Refazer</button>`);$("#rs").onclick=()=>{qi=0;ans=[];rq()}}
+$("#qz").onclick=e=>{const b=e.target;if(b.id=="nx"){qi++;qi<Q.length?rq():end()}else if(b.dataset.i&&!$("#nx")){const q=Q[qi],i=+b.dataset.i;ans.push(i);document.querySelectorAll(".opt").forEach((o,j)=>{o.disabled=true;if(j==q[2])o.classList.add("ok");else if(j==i)o.classList.add("no")});H($("#fb"),`<div class="warn"><b>${i==q[2]?"Certo.":"Não foi dessa vez."}</b> ${q[1][i][1]}</div><button id="nx">${qi<Q.length-1?"Próxima":"Ver placar"}</button>`)}};rq();
+// erros
+const ER=[["Escrever só “Creative Commons”","Cada licença tem permissões diferentes: informe a licença exata, a versão e o link."],["Licenciar material de terceiros","Imagens baixadas, músicas e trechos de livros protegidos não podem ser licenciados por você."],["Achar que dá para revogar ou que exige registro","A licença é irrevogável para cópias já distribuídas e dispensa registro."],["Achar que ND dispensa o crédito","ND só proíbe adaptar; a atribuição continua obrigatória."],["Esquecer SA ou não indicar a adaptação","Derivadas herdam a licença e devem declarar “Adaptado de…” com a obra original creditada."]];
+H($("#er"),ER.map(e=>`<details><summary>${e[0]}</summary><p>${e[1]}</p></details>`).join(""));
+</script></body></html>
